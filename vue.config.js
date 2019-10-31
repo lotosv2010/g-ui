@@ -8,20 +8,20 @@ module.exports = {
     port: 8080,
     host: 'localhost',
     open: true,
-    proxy: {
-      // '/app': {
-      //   // 需要代理的服务器地址
-      //   target: 'http://localhost:8080/json/',
-      //   // websocket
-      //   ws: true,
-      //   // 是否允许跨域
-      //   changeOrigin: true,
-      //   // 重写
-      //   pathRewrite: {
-      //     '/app': '/'
-      //   }
-      // }
-    }
+    // proxy: {
+    //   '/app': {
+    //     // 需要代理的服务器地址
+    //     target: 'http://localhost:8080/json/',
+    //     // websocket
+    //     ws: true,
+    //     // 是否允许跨域
+    //     changeOrigin: true,
+    //     // 重写
+    //     pathRewrite: {
+    //       '/app': '/'
+    //     }
+    //   }
+    // }
   },
   // configureWebpack: (config)=>{
   //   config.plugins.push(new SkeletonWebpackPlugin({
