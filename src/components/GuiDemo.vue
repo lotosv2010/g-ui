@@ -18,15 +18,17 @@
       type="error"
       description="辅助性文字1"
       :show-icon="true"
-      effect="dark"
+      effect="light"
     />
     <g-alert
       title="成功提示的文案"
       type="warning"
       description="辅助性文字1"
       :show-icon="true"
-      effect="dark"
+      effect="light"
     />
+    <i class="g-icons g-share"></i>
+    <g-icon name="info"></g-icon>
   </div>
 </template>
 
@@ -42,18 +44,7 @@ export default class GuiDemo extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.g-alert {
+  margin: 20px;
 }
 </style>

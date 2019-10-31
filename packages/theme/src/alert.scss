@@ -19,16 +19,16 @@
   transition: opacity .2s;
 
   @include when(light) {
-    .el-alert__closebtn {
+    .g-alert__closebtn {
       color: $--color-text-placeholder;
     }
   }
   
   @include when(dark) {
-    .el-alert__closebtn {
+    .g-alert__closebtn {
       color: $--color-white;
     }
-    .el-alert__description {
+    .g-alert__description {
       color: $--color-white;
     }
   }
@@ -41,7 +41,7 @@
     &.is-light {
       background-color: $--alert-success-color;
       color: $--color-success;
-      .el-alert__description {
+      .g-alert__description {
         color: $--color-success;
       }
     }
@@ -56,7 +56,7 @@
     &.is-light {
       background-color: $--alert-info-color;
       color: $--color-info;
-      .el-alert__description {
+      .g-alert__description {
         color: $--color-info;
       }
     }
@@ -71,7 +71,7 @@
     &.is-light {
       background-color: $--alert-warning-color;
       color: $--color-warning;
-      .el-alert__description {
+      .g-alert__description {
         color: $--color-warning;
       }
     }
@@ -86,7 +86,7 @@
     &.is-light {
       background-color: $--alert-danger-color;
       color: $--color-danger;
-      .el-alert__description {
+      .g-alert__description {
         color: $--color-danger;
       }
     }
@@ -119,7 +119,7 @@
     }
   }
 
-  & .el-alert__description {
+  & .g-alert__description {
     font-size: $--alert-description-font-size;
     margin: 5px 0 0 0;
   }
@@ -140,7 +140,7 @@
   }
 }
 
-.el-alert-fade-enter,
-.el-alert-fade-leave-active {
+.g-alert-fade-enter,
+.g-alert-fade-leave-active {
   opacity: 0;
 }

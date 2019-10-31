@@ -1,7 +1,9 @@
 import Alert from './alert/index';
+import Icon from './icon/index';
 
 const components = [
   Alert,
+  Icon,
 ];
 
 const install = (Vue: any, opts = {}) => {
