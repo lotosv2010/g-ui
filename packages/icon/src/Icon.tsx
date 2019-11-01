@@ -1,4 +1,3 @@
-<script lang="tsx">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
@@ -11,4 +10,3 @@ export default class GIcon extends Vue {
     );
   }
 }
-</script>
