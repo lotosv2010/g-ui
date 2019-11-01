@@ -37,3 +37,6 @@ npm run test:unit
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### 参考材料
+[如使用Typescript撸Vue](https://blog.csdn.net/weixin_30376509/article/details/98794761)
