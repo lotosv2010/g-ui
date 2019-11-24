@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h2>{{ msg }}{{ str }}</h2>
+    <hr>
     <g-alert
       title="信息提示的文案"
       type="info"
@@ -27,6 +28,7 @@
       :show-icon="true"
       effect="light"
     />
+    <hr>
     <i class="g-icons g-share"></i>
     <g-icon name="info"></g-icon>
   </div>

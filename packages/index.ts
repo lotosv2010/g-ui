@@ -1,9 +1,15 @@
 import Alert from './alert/index';
 import Icon from './icon/index';
+import From from './form/index';
+import FromItem from './formItem/index';
+import Input from './input/index';
 
 const components = [
   Alert,
   Icon,
+  From,
+  FromItem,
+  Input,
 ];
 
 const install = (Vue: any, opts = {}) => {
