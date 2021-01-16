@@ -1,0 +1,23 @@
+@import './common/var';
+@import './mixin/index';
+
+$size: 20px;
+@include blockquote(icon) {
+  width: $size;
+  height: $size;
+  display: inline-block;
+  line-height: $size;
+  vertical-align: middle;
+  text-align: center;
+}
+.icon-loading {
+  animation: rotating 2s linear infinite;
+}
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

@@ -1,0 +1,26 @@
+$namespace: 'gui-';
+@mixin blockquote ($block) {
+  $block-name: $namespace + $block !global;
+  .#{$block-name} {
+    @content;
+  }
+}
+@mixin status($color) {
+  @each $key, $value in $color {
+    &.#{$block-name}-#{$key} {
+      background: $value;
+    }
+  }
+}
+@mixin m($modifier) {
+  @at-root {
+    &-#{$modifier} {
+      @content;
+    }
+  }
+}
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  border-radius: $border-radius;
+}

@@ -1,0 +1,54 @@
+@import './common/var';
+@import './mixin/index';
+
+$color: #FFFFFF;
+$shadow-color: #CCCCCC;
+$shadow-offset: 2px;
+$margin: 5px;
+$color-list: (
+  primary: $primary,
+  info: $info,
+  success: $success,
+  warning: $warning,
+  danger: $danger
+);
+$color-active-list: (
+  primary: $primary-active,
+  info: $info-active,
+  success: $success-active,
+  warning: $warning-active,
+  danger: $danger-active
+);
+@include blockquote(button) {
+  @include status($color-list);
+  color: $color;
+  display: inline-flex;
+  border: none;
+  outline: none;
+  box-shadow: $shadow-offset $shadow-offset $shadow-color;
+  align-items: center;
+  cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+  }
+  &:active:not(:disabled) {
+    @include status($color-active-list);
+  }
+  @include m(normal) {
+    @include button-size($button-normal-padding-vertical, $button-normal-padding-horizontal, $button-normal-font-size, $button-normal-border-radius);
+  }
+  @include m(medium) {
+    @include button-size($button-medium-padding-vertical, $button-medium-padding-horizontal, $button-medium-font-size, $button-medium-border-radius);
+  }
+  @include m(small) {
+    @include button-size($button-small-padding-vertical, $button-small-padding-horizontal, $button-small-font-size, $button-small-border-radius);
+  }
+  @include m(mini) {
+    @include button-size($button-mini-padding-vertical, $button-mini-padding-horizontal, $button-mini-font-size, $button-mini-border-radius);
+  }
+  .icon {
+    margin: {
+      right: $margin;
+    }
+  }
+}

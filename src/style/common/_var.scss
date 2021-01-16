@@ -1,0 +1,35 @@
+// 样式变量
+$primary: #409EFF;
+$success: #67C23A;
+$warning: #E6A23C;
+$danger: #F56C6C;
+$info: #909399;
+
+$primary-active: #3a8ee6;
+$success-active: #5daf34;
+$warning-active: #cf9236;
+$danger-active: #dd6161;
+$info-active: #82848a;
+$font-size-base:14px;
+$border-radius-base:4px;
+
+/* Button -------------------------- */
+$button-normal-font-size: $font-size-base !default;
+$button-normal-border-radius: $border-radius-base !default;
+$button-normal-padding-vertical: 12px !default;
+$button-normal-padding-horizontal: 20px !default;
+
+$button-medium-font-size: $font-size-base !default;
+$button-medium-border-radius: $border-radius-base !default;
+$button-medium-padding-vertical: 10px !default;
+$button-medium-padding-horizontal: 20px !default;
+
+$button-small-font-size: 12px !default;
+$button-small-border-radius: #{$border-radius-base - 1} !default;
+$button-small-padding-vertical: 9px !default;
+$button-small-padding-horizontal: 15px !default;
+
+$button-mini-font-size: 12px !default;
+$button-mini-border-radius: #{$border-radius-base - 1} !default;
+$button-mini-padding-vertical: 7px !default;
+$button-mini-padding-horizontal: 15px !default;
