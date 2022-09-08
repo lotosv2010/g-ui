@@ -1,0 +1,15 @@
+import Gui{{properCase name}} from '../src/{{name}}.vue'
+
+export default {
+  title: 'Gui-{{properCase name}}',
+  component: Gui{{properCase name}}
+}
+
+export const {{properCase name}} = _ => ({
+  components: { Gui{{properCase name}} },
+  template: `
+    <div>
+      <gui-{{name}}></gui-{{name}}>
+    </div>
+  `
+})
