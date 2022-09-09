@@ -11,11 +11,17 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "prettier": "^2.7.1",
+    "@babel/core": "^7.11.0",
+    "@storybook/vue": "^5.3.19",
+    "babel-loader": "^8.1.0",
+    "vue-loader": "^15.9.3",
+    "babel-preset-vue": "^2.0.2",
     "vue-template-compiler": "^2.6.11"
   },
   "scripts": {
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "storybook": "start-storybook -p 6006",
+    "build:storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
