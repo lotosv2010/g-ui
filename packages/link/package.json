@@ -1,0 +1,14 @@
+{
+  "name": "gui-link",
+  "version": "0.0.1",
+  "description": "gui-link component",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "author": "Robin <lotosv2010@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "del": "rimraf dist"
+  },
+  "keywords": []
+}
