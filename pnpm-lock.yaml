@@ -5,6 +5,7 @@ importers:
   .:
     specifiers:
       '@babel/core': ^7.11.0
+      '@babel/preset-env': ^7.19.0
       '@rollup/plugin-json': ^4.1.0
       '@rollup/plugin-node-resolve': ^8.4.0
       '@storybook/addon-actions': ^5.3.19
@@ -33,6 +34,7 @@ importers:
       vue: 2.7.10
     devDependencies:
       '@babel/core': 7.19.0
+      '@babel/preset-env': 7.19.0_@babel+core@7.19.0
       '@rollup/plugin-json': 4.1.0_rollup@2.79.0
       '@rollup/plugin-node-resolve': 8.4.0_rollup@2.79.0
       '@storybook/addon-actions': 5.3.21
