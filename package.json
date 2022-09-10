@@ -12,18 +12,26 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^14.0.1",
     "@storybook/vue": "^5.3.19",
     "@vue/test-utils": "^1.0.3",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^26.2.2",
     "babel-loader": "^8.1.0",
     "babel-preset-vue": "^2.0.2",
+    "cross-env": "^7.0.2",
     "jest": "^26.2.2",
     "lerna": "^5.5.1",
     "plop": "^3.1.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.79.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-vue": "5.1.9",
     "vue-jest": "^3.0.6",
     "vue-loader": "^15.9.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.7.10"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -32,7 +40,9 @@
     "plop": "plop",
     "lerna": "lerna publish",
     "clean": "lerna clean",
-    "test": "jest"
+    "test": "jest",
+    "build:prod": "cross-env NODE_ENV=production rollup -c",
+    "build:dev": "cross-env NODE_ENV=development rollup -c"
   },
   "keywords": [],
   "author": "",
