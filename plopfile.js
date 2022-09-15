@@ -1,19 +1,20 @@
 module.exports = plop => {
   plop.setGenerator('component', {
-    description: 'create a custom component',
+    description: 'create a custom component', // 描述生成器行为
     prompts: [
       {
-        type: 'input',
-        name: 'name',
-        message: 'component name',
-        default: 'MyComponent'
+        type: 'input', // 交互类型 input number checkbox ...
+        name: 'name', // 参数使用存储的属性名
+        message: 'component name', // 提示信息
+        default: 'MyComponent' // 参数默认值
       }
     ],
+    // 执行配置
     actions: [
       {
-        type: 'add',
-        path: 'packages/{{name}}/src/{{name}}.vue',
-        templateFile: 'plop-template/component/src/component.hbs'
+        type: 'add', // 预设类型 add modify addMany etc
+        path: 'packages/{{name}}/src/{{name}}.vue', // 文件生成目录
+        templateFile: 'plop-template/component/src/component.hbs' // 模板文件地址, 使用模板文件生成文件
       },
       {
         type: 'add',
